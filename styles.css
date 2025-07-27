@@ -1,0 +1,39 @@
+:root {
+    --background: 220 26% 6%;
+    --foreground: 210 40% 98%;
+    --primary: 235 69% 70%;
+    --lunar-primary: 235 69% 70%;
+    --lunar-secondary: 250 60% 30%;
+    --lunar-accent: 210 100% 85%;
+    --lunar-dark: 220 26% 6%;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/lunar-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: hsl(var(--foreground));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.title-gradient {
+    background: linear-gradient(90deg, hsl(var(--lunar-accent)), hsl(var(--lunar-primary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.customer-portal {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid hsl(var(--lunar-primary));
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.customer-portal:hover {
+    background: rgba(135, 206, 235, 0.1);
+    border-color: hsl(var(--lunar-accent));
+    box-shadow: 0 0 15px rgba(135, 206, 235, 0.3);
+} 
